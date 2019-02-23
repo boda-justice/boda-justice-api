@@ -1,6 +1,14 @@
 # boda-justice-api
 The API for the Boda Justice Application
 
+## Documentation
+
+| **URL EndPoint**          | **HTTP Method**| **Public Access** | **Summary**                            |
+| ------------------------  | ---------------| ----------------- |----------------------------------------|
+| /api/v1/                  |     GET        |      True         | Show a welcome message of the app      |
+| /api/v1/offences          |     GET        |      True         | Retrieves all offences                 |
+| /api/v1/offences/pk       |     GET        |      True         | Get a particular offence               |
+
 ### Setting up the application
 
 #### Dependencies
@@ -12,6 +20,7 @@ What was used to set up the application:
 |`3.7`            | [Python](https://www.python.org/downloads/release/python-370/) |
 |`18.1`           | [Pip](https://pip.pypa.io/en/stable/)                          |
 |`2.1.7`          | [Django](https://www.djangoproject.com/)                       |
+|`3.9.1`          | [Django Rest Framework](https://www.django-rest-framework.org/)|
 
 1. Clone the repository
 
@@ -47,4 +56,10 @@ python manage.py migrate
 ```
 cd src/core/
 python manage.py runserver
+```
+
+6. Create an admin
+
+```
+python manage.py createsuperuser
 ```
