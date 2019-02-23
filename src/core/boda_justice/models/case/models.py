@@ -20,3 +20,10 @@ class Case(models.Model):
     # separate model Case Status'
     status = models.BooleanField(_('case_status'), default=False, help_text=_(
         'Designates whether the case is open or closed.'),)
+
+
+class CaseOffences(models.Model):
+    case = models.ForeignKey(
+        Case, related_name='case_offences', on_delete=models.CASCADE)
+    offence = models.ForeignKey(
+        Offence, on_delete=models.CASCADE)

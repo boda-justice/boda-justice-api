@@ -6,3 +6,4 @@ from boda_justice.models.complaint.models import Complaints
 from boda_justice.models.offence.models import Offence
 from boda_justice.models.police_station.models import PoliceStation
 from boda_justice.models.review.models import Reviews
+from boda_justice.models.case.models import CaseOffences
