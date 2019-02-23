@@ -35,7 +35,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Run the application
+4. Run and migrate application
+
+```
+cd src/core/
+python manage.py makemigrations
+python manage.py migrate
+```
+5. Run the application
 
 ```
 cd src/core/
